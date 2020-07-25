@@ -1,0 +1,10 @@
+# IDA packed database
+*.i64
+
+# DDrawCompat files
+ddraw.dll
+ddraw.log
+
+# Backups
+nppBackup
+PIKLIB8_orig.dll
