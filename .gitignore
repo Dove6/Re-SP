@@ -1,6 +1,13 @@
 # IDA packed database
 *.i64
 
+# IDA unpacked database
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+
 # DDrawCompat files
 ddraw.dll
 ddraw.log
