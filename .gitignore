@@ -15,3 +15,6 @@ ReksioPiraci.exe*.bak
 
 # Helpful items, but not part of the game itself
 other
+
+# Game debug files
+ARIAL14.FNT
