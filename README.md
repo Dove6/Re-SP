@@ -42,7 +42,7 @@ Note that the game engine is Windows-only and 32-bit (x86 arch).
   * cleanup: removed unnecessary comments and leftover code from the script
 * **5ROBINSON** *\[Dane/Intro/MainMenu/05robinson/5ROBINSON.cnv]*  
   * porting: replaced all the CONDITION objects with @IF conditional statements,
-  * bug: catched geese were standing still after being catched (on scene re-entry);  
+  * bug: geese were standing still after being caught (on scene re-entry);  
     fixed by adding `GESZAGx^PLAY("GESx");` in conditionals in `GESZAGx:ONINIT` callbacks (where x stands for numbers 1-6),
   * bug: Robinson's farewell was always interrupted by leaving the scene;  
     fixed by moving `RATUNEK^GOTO("4PLAZA");` (which is switching the current scene) from `REKSIO:ONFINISHED^DOPLANSZY4` to `ROBSEQ:ONFINISHED^PAPA` and thus postponing leaving the scene until the goat is finished talking,
@@ -88,7 +88,7 @@ Note that the game engine is Windows-only and 32-bit (x86 arch).
     fixed by resetting it just after the map translation,
   * feature: readded spoken description for the conduct pass and pearls buttons
 * **PALISADA13** *\[Dane/Intro/MainMenu/13Palisada/PALISADA13.cnv]*  
-  * porting: replaced all the CONDITION objects with @IF conditional statements,
+  * porting: replaced some CONDITION objects with @IF conditional statements,
   * porting: replaced all ONCOLLISION callbacks with a self-made AABB collision checker,
   * porting: replaced all the EXPRESSION objects with bracket-enclosed in-line expressions,
   * bug: the coconut buttons could become enabled even after the finishing sequence (whether on win or on lose) has been started;  
