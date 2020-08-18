@@ -169,6 +169,10 @@ OBJECT=WSKAZNIK
 WSKAZNIK:TYPE=BEHAVIOUR
 WSKAZNIK:CODE={MAPA^PLAY(POZYCJAREKSIA);}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

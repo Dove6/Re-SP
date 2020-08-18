@@ -347,6 +347,10 @@ OBJECT=GOTO2
 GOTO2:TYPE=BEHAVIOUR
 GOTO2:CODE={RATUNEK^GOTO("OUTRO_2");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

@@ -135,6 +135,10 @@ OBJECT=POWROT
 POWROT:TYPE=BEHAVIOUR
 POWROT:CODE={RATUNEK^BACK();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

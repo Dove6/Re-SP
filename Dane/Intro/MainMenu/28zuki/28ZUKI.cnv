@@ -2138,6 +2138,10 @@ OBJECT=ZAPAR27
 ZAPAR27:TYPE=BEHAVIOUR
 ZAPAR27:CODE={ARRAY27^ADD(0);ARRAY27^ADD(0);ARRAY27^ADD(1);}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

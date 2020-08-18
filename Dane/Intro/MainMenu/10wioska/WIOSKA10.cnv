@@ -1121,6 +1121,10 @@ OBJECT=BEHRESETMELODIA
 BEHRESETMELODIA:TYPE=BEHAVIOUR
 BEHRESETMELODIA:CODE={VARMELODIA^SET(0);}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

@@ -842,6 +842,10 @@ OBJECT=BEHROZPALOGIEN
 BEHROZPALOGIEN:TYPE=BEHAVIOUR
 BEHROZPALOGIEN:CODE={ANIMOOGNIK^PLAY("PLAY");ANIMOOGNIK^SHOW();MOUSE^HIDE();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

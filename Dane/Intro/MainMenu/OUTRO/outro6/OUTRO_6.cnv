@@ -393,6 +393,10 @@ OBJECT=PLAY14
 PLAY14:TYPE=BEHAVIOUR
 PLAY14:CODE={OUTRO14^PLAY();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

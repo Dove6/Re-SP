@@ -169,6 +169,10 @@ OBJECT=BEHSPIEWKUR
 BEHSPIEWKUR:TYPE=BEHAVIOUR
 BEHSPIEWKUR:CODE={@IF("VARKROLEWNAETAPMUZYKA'1","{SNDSPIEWKUR^PLAY();}","");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

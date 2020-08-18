@@ -242,6 +242,10 @@ OBJECT=DOMENU
 DOMENU:TYPE=BEHAVIOUR
 DOMENU:CODE={RATUNEK^GOTO("MENUGLOWNE");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

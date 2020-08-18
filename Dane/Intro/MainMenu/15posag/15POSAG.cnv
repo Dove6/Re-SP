@@ -1047,6 +1047,10 @@ OBJECT=BEH_10
 BEH_10:TYPE=BEHAVIOUR
 BEH_10:CODE={INT_10^INC();BEH_NEXT_ZAGADKA^RUN();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

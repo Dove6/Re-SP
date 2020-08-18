@@ -881,6 +881,10 @@ OBJECT=BEHSUKCES
 BEHSUKCES:TYPE=BEHAVIOUR
 BEHSUKCES:CODE={BEHDISABLEBUTTON^RUN();SEQNARRATOR^PLAY("2SUCCESS");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

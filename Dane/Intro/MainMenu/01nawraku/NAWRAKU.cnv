@@ -926,6 +926,10 @@ OBJECT=ENABLEBUT
 ENABLEBUT:TYPE=BEHAVIOUR
 ENABLEBUT:CODE={SURFBUT^ENABLE();PLAZA^ENABLE();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

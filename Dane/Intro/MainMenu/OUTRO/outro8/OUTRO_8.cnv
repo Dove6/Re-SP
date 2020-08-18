@@ -388,6 +388,10 @@ OBJECT=EXITPROGRAM
 EXITPROGRAM:TYPE=BEHAVIOUR
 EXITPROGRAM:CODE={RATUNEK^GOTO("OFERTA");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

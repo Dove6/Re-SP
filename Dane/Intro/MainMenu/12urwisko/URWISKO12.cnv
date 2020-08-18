@@ -611,6 +611,10 @@ OBJECT=BEHGOTOMAPA
 BEHGOTOMAPA:TYPE=BEHAVIOUR
 BEHGOTOMAPA:CODE={BEHDISABLEBUTTONS^RUN();ANIMOREKSIO^PLAY("OGLADAMAPE");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

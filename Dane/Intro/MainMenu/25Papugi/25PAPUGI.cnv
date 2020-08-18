@@ -858,6 +858,10 @@ OBJECT=ENABLEBUTTONOW
 ENABLEBUTTONOW:TYPE=BEHAVIOUR
 ENABLEBUTTONOW:CODE={EXITBUT^ENABLE();MAPABUT^ENABLE();DO22B^ENABLE();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

@@ -711,6 +711,10 @@ OBJECT=EXITPROGRAMNAMAXA
 EXITPROGRAMNAMAXA:TYPE=BEHAVIOUR
 EXITPROGRAMNAMAXA:CODE={RATUNEK^GOTO("POKONTROLI");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

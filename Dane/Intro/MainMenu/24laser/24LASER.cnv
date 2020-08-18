@@ -1389,6 +1389,10 @@ OBJECT=LECIKAMIEN
 LECIKAMIEN:TYPE=BEHAVIOUR
 LECIKAMIEN:CODE={TIMERSPADANIA^ENABLE();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

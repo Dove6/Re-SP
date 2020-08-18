@@ -883,6 +883,10 @@ OBJECT=BEH_SHOW_MASKA
 BEH_SHOW_MASKA:TYPE=BEHAVIOUR
 BEH_SHOW_MASKA:CODE={MASKA^SHOW();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

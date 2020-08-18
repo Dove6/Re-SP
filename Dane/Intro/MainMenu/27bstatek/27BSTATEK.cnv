@@ -429,6 +429,10 @@ OBJECT=DOOUTRO
 DOOUTRO:TYPE=BEHAVIOUR
 DOOUTRO:CODE={RATUNEK^GOTO("OUTRO_1");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

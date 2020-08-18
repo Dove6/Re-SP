@@ -277,6 +277,10 @@ OBJECT=KOMBOS
 KOMBOS:TYPE=BEHAVIOUR
 KOMBOS:CODE={START^HIDE();NAPISY^PLAY("PLAY");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

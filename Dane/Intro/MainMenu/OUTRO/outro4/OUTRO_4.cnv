@@ -223,6 +223,10 @@ OBJECT=GOTO5
 GOTO5:TYPE=BEHAVIOUR
 GOTO5:CODE={RATUNEK^GOTO("OUTRO_5");}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################

@@ -224,6 +224,10 @@ OBJECT=PLAYSOUND
 PLAYSOUND:TYPE=BEHAVIOUR
 PLAYSOUND:CODE={THIS^PLAY();}
 
+OBJECT=__INIT__
+__INIT__:TYPE=BEHAVIOUR
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
+
 ######################################
 #############CONDITION#############
 ######################################
