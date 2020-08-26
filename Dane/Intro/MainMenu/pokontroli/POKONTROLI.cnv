@@ -1,18 +1,19 @@
+######################################
+##############  TIMER  ###############
+######################################
 
-#
-#KONTRTIMER1
-#
-OBJECT=KONTRTIMER1
-KONTRTIMER1:TYPE=TIMER
-KONTRTIMER1:ELAPSE=5000
-KONTRTIMER1:TICKS=0
-KONTRTIMER1:ONTICK={RATUNEK^GOTO("CREDITS");}
+OBJECT=TIMEXIT
+TIMEXIT:TYPE=TIMER
+TIMEXIT:ELAPSE=5000
+TIMEXIT:TICKS=0
+TIMEXIT:ONTICK={RATUNEK^GOTO("CREDITS");}
 
+
+######################################
+############  BEHAVIOUR  #############
+######################################
 
 OBJECT=__INIT__
 __INIT__:TYPE=BEHAVIOUR
 __INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
-
-
-
 

@@ -1,18 +1,7 @@
 ######################################
-#############VARIABLE#############
+##############  IMAGE  ###############
 ######################################
 
-######################################
-##############ANIMO###############
-######################################
-
-######################################
-##############IMAGE###############
-######################################
-
-#
-#BEXIT
-#
 OBJECT=BEXIT
 BEXIT:TYPE=IMAGE
 BEXIT:VISIBLE=TRUE
@@ -23,7 +12,6 @@ BEXIT:PRELOAD=TRUE
 BEXIT:RELEASE=TRUE
 BEXIT:MONITORCOLLISION=FALSE
 BEXIT:MONITORCOLLISIONALPHA=FALSE
-BEXIT:ONINIT=PLAYSOUND
 
 OBJECT=BEXITOM
 BEXITOM:TYPE=IMAGE
@@ -37,13 +25,11 @@ BEXITOC:VISIBLE=TRUE
 BEXITOC:FILENAME=BEXITOC.IMG
 BEXITOC:TOCANVAS=TRUE
 
+
 ######################################
-##############BUTTON##############
+##############  BUTTON  ##############
 ######################################
 
-#
-#BUTEXIT
-#
 OBJECT=BUTEXIT
 BUTEXIT:TYPE=BUTTON
 BUTEXIT:VISIBLE=TRUE
@@ -52,113 +38,25 @@ BUTEXIT:DRAGGABLE=FALSE
 BUTEXIT:GFXSTANDARD=BEXIT
 BUTEXIT:GFXONMOVE=BEXITOM
 BUTEXIT:GFXONCLICK=BEXITOC
-BUTEXIT:ONACTION=POWROT
+BUTEXIT:ONACTION={RATUNEK^BACK();}
+
 
 ######################################
-###############TEXT###############
+##############  SOUND  ###############
 ######################################
 
-######################################
-################SEQ###############
-######################################
-
-######################################
-###############RAND###############
-######################################
-
-######################################
-##############TIMER###############
-######################################
-
-######################################
-###############GROUP##############
-######################################
-
-######################################
-###############SOUND##############
-######################################
-
-#
-#4BMAPA2
-#
 OBJECT=4BMAPA2
 4BMAPA2:TYPE=SOUND
 4BMAPA2:FILENAME=4BMAPA2.WAV
 4BMAPA2:PRELOAD=FALSE
 4BMAPA2:RELEASE=FALSE
 
-######################################
-###############FONT###############
-######################################
 
 ######################################
-###############ARRAY###############
+############  BEHAVIOUR  #############
 ######################################
-
-######################################
-##########CANVASOBSERVER#########
-######################################
-
-#
-#MOUSE
-#
-OBJECT=MOUSE
-MOUSE:TYPE=MOUSE
-
-#
-#KEYBOARD
-#
-OBJECT=KEYBOARD
-KEYBOARD:TYPE=KEYBOARD
-
-#
-#CANVASOBSERVER
-#
-OBJECT=CANVASOBSERVER
-CANVASOBSERVER:TYPE=CANVAS_OBSERVER
-
-######################################
-#############BEHAVIOUR#############
-######################################
-
-#
-#PLAYSOUND
-#
-OBJECT=PLAYSOUND
-PLAYSOUND:TYPE=BEHAVIOUR
-PLAYSOUND:CODE={4BMAPA2^PLAY();}
-
-#
-#POWROT
-#
-OBJECT=POWROT
-POWROT:TYPE=BEHAVIOUR
-POWROT:CODE={RATUNEK^BACK();}
 
 OBJECT=__INIT__
 __INIT__:TYPE=BEHAVIOUR
-__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
-
-######################################
-#############CONDITION#############
-######################################
-
-######################################
-#############COMPLEXCONDITION#############
-######################################
-
-######################################
-#############EXPRESSION#############
-######################################
-
-######################################
-#############SIGNAL#############
-######################################
-
-
-
-
-
-
-
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN(); !SOUNDS_INIT; 4BMAPA2^PLAY();}
 
