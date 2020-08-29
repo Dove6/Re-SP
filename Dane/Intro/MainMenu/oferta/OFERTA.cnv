@@ -1,3 +1,7 @@
+######################################
+##############  ANIMO  ###############
+######################################
+
 OBJECT=ANNOFERTA
 ANNOFERTA:TYPE=ANIMO
 ANNOFERTA:VISIBLE=TRUE
@@ -11,22 +15,21 @@ ANNOFERTA:MONITORCOLLISION=FALSE
 ANNOFERTA:MONITORCOLLISIONALPHA=FALSE
 ANNOFERTA:ONFINISHED={PIRACI^EXIT();}
 
+
+######################################
+###############  MISC  ###############
+######################################
+
 OBJECT=MOUSE
 MOUSE:TYPE=MOUSE
 MOUSE:ONCLICK={PIRACI^EXIT();}
 
-OBJECT=CNVLOADER
-CNVLOADER:TYPE=CNVLOADER
 
-OBJECT=CANVASOBSERVER
-CANVASOBSERVER:TYPE=CANVAS_OBSERVER
-
-OBJECT=KEYBOARD
-KEYBOARD:TYPE=KEYBOARD
+######################################
+############  BEHAVIOUR  #############
+######################################
 
 OBJECT=__INIT__
 __INIT__:TYPE=BEHAVIOUR
 __INIT__:CODE={BEHINITSCENEMUSIC^RUN();ANNOFERTA^PLAY("OFERTA");}
-
-
 

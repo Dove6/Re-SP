@@ -1,14 +1,7 @@
 ######################################
-#############VARIABLE#############
+##############  ANIMO  ###############
 ######################################
 
-######################################
-##############ANIMO###############
-######################################
-
-#
-#MAPA
-#
 OBJECT=MAPA
 MAPA:TYPE=ANIMO
 MAPA:VISIBLE=TRUE
@@ -20,15 +13,12 @@ MAPA:PRELOAD=TRUE
 MAPA:RELEASE=TRUE
 MAPA:MONITORCOLLISION=FALSE
 MAPA:MONITORCOLLISIONALPHA=FALSE
-MAPA:ONINIT=WSKAZNIK
+
 
 ######################################
-##############IMAGE###############
+##############  IMAGE  ###############
 ######################################
 
-#
-#BEXIT
-#
 OBJECT=BEXIT
 BEXIT:TYPE=IMAGE
 BEXIT:VISIBLE=TRUE
@@ -39,7 +29,6 @@ BEXIT:PRELOAD=TRUE
 BEXIT:RELEASE=TRUE
 BEXIT:MONITORCOLLISION=FALSE
 BEXIT:MONITORCOLLISIONALPHA=FALSE
-BEXIT:ONINIT={POZYCJAREKSIA^SET(101);}
 
 OBJECT=BEXITOM
 BEXITOM:TYPE=IMAGE
@@ -53,13 +42,11 @@ BEXITOC:VISIBLE=TRUE
 BEXITOC:FILENAME=BEXITOC.IMG
 BEXITOC:TOCANVAS=TRUE
 
+
 ######################################
-##############BUTTON##############
+##############  BUTTON  ##############
 ######################################
 
-#
-#BUTEXIT
-#
 OBJECT=BUTEXIT
 BUTEXIT:TYPE=BUTTON
 BUTEXIT:VISIBLE=TRUE
@@ -68,131 +55,33 @@ BUTEXIT:DRAGGABLE=FALSE
 BUTEXIT:GFXSTANDARD=BEXIT
 BUTEXIT:GFXONMOVE=BEXITOM
 BUTEXIT:GFXONCLICK=BEXITOC
-BUTEXIT:ONACTION=POWROT
+BUTEXIT:ONACTION={RATUNEK^BACK();}
 
-#
-#BUTWIADOMOSC
-#
 OBJECT=BUTWIADOMOSC
 BUTWIADOMOSC:TYPE=BUTTON
 BUTWIADOMOSC:VISIBLE=TRUE
 BUTWIADOMOSC:RECT=70,120,280,450
 BUTWIADOMOSC:ENABLE=TRUE
 BUTWIADOMOSC:DRAGGABLE=FALSE
-BUTWIADOMOSC:ONACTION={@IF("CZYKURCZAKA'1","PLAYWIAD","");}
+BUTWIADOMOSC:ONACTION={@IF("CZYKURCZAKA'1","{OGRYZEK^PLAY();}","");}
+
 
 ######################################
-###############TEXT###############
+##############  SOUND  ###############
 ######################################
 
-######################################
-################SEQ###############
-######################################
-
-######################################
-###############RAND###############
-######################################
-
-######################################
-##############TIMER###############
-######################################
-
-######################################
-###############GROUP##############
-######################################
-
-######################################
-###############SOUND##############
-######################################
-
-#
-#OGRYZEK
-#
 OBJECT=OGRYZEK
 OGRYZEK:TYPE=SOUND
 OGRYZEK:FILENAME=OGRYZEK.WAV
 OGRYZEK:PRELOAD=FALSE
 OGRYZEK:RELEASE=FALSE
 
-######################################
-###############FONT###############
-######################################
 
 ######################################
-###############ARRAY###############
+############  BEHAVIOUR  #############
 ######################################
-
-######################################
-##########CANVASOBSERVER#########
-######################################
-
-#
-#MOUSE
-#
-OBJECT=MOUSE
-MOUSE:TYPE=MOUSE
-
-#
-#KEYBOARD
-#
-OBJECT=KEYBOARD
-KEYBOARD:TYPE=KEYBOARD
-
-#
-#CANVASOBSERVER
-#
-OBJECT=CANVASOBSERVER
-CANVASOBSERVER:TYPE=CANVAS_OBSERVER
-
-######################################
-#############BEHAVIOUR#############
-######################################
-
-#
-#POWROT
-#
-OBJECT=POWROT
-POWROT:TYPE=BEHAVIOUR
-POWROT:CODE={RATUNEK^BACK();}
-
-#
-#PLAYWIAD
-#
-OBJECT=PLAYWIAD
-PLAYWIAD:TYPE=BEHAVIOUR
-PLAYWIAD:CODE={OGRYZEK^PLAY();}
-
-#
-#WSKAZNIK
-#
-OBJECT=WSKAZNIK
-WSKAZNIK:TYPE=BEHAVIOUR
-WSKAZNIK:CODE={MAPA^PLAY(POZYCJAREKSIA);}
 
 OBJECT=__INIT__
 __INIT__:TYPE=BEHAVIOUR
-__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
-
-######################################
-#############CONDITION#############
-######################################
-
-######################################
-#############COMPLEXCONDITION#############
-######################################
-
-######################################
-#############EXPRESSION#############
-######################################
-
-######################################
-#############SIGNAL#############
-######################################
-
-
-
-
-
-
-
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN();MAPA^PLAY(POZYCJAREKSIA);POZYCJAREKSIA^SET(101);}
 

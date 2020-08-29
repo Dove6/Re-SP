@@ -133,7 +133,7 @@ BTNSLIDER:ONFOCUSON={@IF("SNDCHANGEVOL^ISPLAYING()'FALSE","{SNDCHANGEVOL^PLAY();
 
 
 ######################################
-###############  SOUND  ##############
+##############  SOUND  ###############
 ######################################
 
 OBJECT=SNDRETURN
@@ -158,15 +158,9 @@ MOUSE:TYPE=MOUSE
 MOUSE:ONRELEASE={@IF("BISSLIDING'TRUE","{BISSLIDING^SET(FALSE);}","");}
 MOUSE:ONMOVE={@IF("BISSLIDING'TRUE","BEHMOVESLIDER","");}
 
-OBJECT=KEYBOARD
-KEYBOARD:TYPE=KEYBOARD
-
-OBJECT=CANVAS_OBSERVER
-CANVAS_OBSERVER:TYPE=CANVAS_OBSERVER
-
 
 ######################################
-#############  BEHAVIOUR  ############
+############  BEHAVIOUR  #############
 ######################################
 
 OBJECT=BEHMOVESLIDER

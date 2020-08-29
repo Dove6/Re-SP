@@ -1,20 +1,20 @@
-OBJECT=MUSIC
-MUSIC:TYPE=MUSIC
-MUSIC:FILENAME=PLANSZA006.WAV
-
+######################################
+##############  ANIMO  ###############
+######################################
 
 OBJECT=KURA
 KURA:TYPE=ANIMO
 KURA:FILENAME=KURA.ANN
 KURA:TOCANVAS=TRUE
 KURA:VISIBLE=TRUE
-KURA:ONINIT={THIS^PLAY("PLAY");}
 KURA:ONFINISHED={RATUNEK^GOTO("CUTSTATEK3");}
 
 
+######################################
+############  BEHAVIOUR  #############
+######################################
+
 OBJECT=__INIT__
 __INIT__:TYPE=BEHAVIOUR
-__INIT__:CODE={BEHINITSCENEMUSIC^RUN();}
-
-
+__INIT__:CODE={BEHINITSCENEMUSIC^RUN(); !ANIMATIONS_INIT; KURA^PLAY("PLAY");}
 
